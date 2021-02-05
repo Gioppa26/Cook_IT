@@ -23,7 +23,7 @@ import java.util.Random;
 public class Alimenti extends AppCompatActivity {
     SearchView ricercaAlimenti;
     ListView lista;
-    CheckBox uovo,parmigiano,mozzarella,burro,yogurt,speck,pecorino,melanzane,carote,zucchine;
+    CheckBox uovo,parmigiano,mozzarella,burro,yogurt,speck,pecorino,melanzane,carote,zucchine,pomodori;
     Button inviaAlimenti;
     TextView prova;
     private ArrayList<String> mResult;
@@ -33,8 +33,7 @@ public class Alimenti extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alimenti);
 
-        ricercaAlimenti=(SearchView) findViewById(R.id.ricerca);
-        lista=(ListView)findViewById(R.id.ricercalist);
+
         uovo=(CheckBox) findViewById(R.id.cbUova);
         mozzarella=(CheckBox) findViewById(R.id.cbMozzarella);
         parmigiano=(CheckBox) findViewById(R.id.cbParmigiano);
@@ -43,9 +42,9 @@ public class Alimenti extends AppCompatActivity {
         yogurt=(CheckBox) findViewById(R.id.cbYogurt);
         pecorino=(CheckBox) findViewById(R.id.cbPecorino);
         melanzane=(CheckBox) findViewById(R.id.cbMelanzane);
-        carote=(CheckBox) findViewById(R.id.cbMelanzane);
-        melanzane=(CheckBox) findViewById(R.id.cbMelanzane);
-        melanzane=(CheckBox) findViewById(R.id.cbMelanzane);
+        carote=(CheckBox) findViewById(R.id.cbCarote);
+        zucchine=(CheckBox) findViewById(R.id.cbZucchine);
+        pomodori=(CheckBox) findViewById(R.id.cbPomodori);
         inviaAlimenti=(Button) findViewById(R.id.conferma);
         prova=(TextView) findViewById(R.id.textView6);
         mResult = new ArrayList<>();
@@ -55,10 +54,10 @@ public class Alimenti extends AppCompatActivity {
             public void onClick(View v) {
                 if(uovo.isChecked())
                 {
-                    mResult.add("Uovo");
+                    mResult.add("Eggs");
                 }
                 else
-                    mResult.remove("Uovo");
+                    mResult.remove("Eggs");
             }
 
     });
@@ -67,10 +66,10 @@ public class Alimenti extends AppCompatActivity {
             public void onClick(View v) {
                 if(mozzarella.isChecked())
                 {
-                    mResult.add("mozzarella");
+                    mResult.add("Mozzarella");
                 }
                 else
-                    mResult.remove("mozzarella");
+                    mResult.remove("Mozzarella");
             }
 
         });
@@ -79,10 +78,10 @@ public class Alimenti extends AppCompatActivity {
             public void onClick(View v) {
                 if(parmigiano.isChecked())
                 {
-                    mResult.add("Chicken");
+                    mResult.add("Cheese");
                 }
                 else
-                    mResult.remove("Chicken");
+                    mResult.remove("Cheese");
             }
 
         });
@@ -91,10 +90,10 @@ public class Alimenti extends AppCompatActivity {
             public void onClick(View v) {
                 if(burro.isChecked())
                 {
-                    mResult.add("Burro");
+                    mResult.add("Butter");
                 }
                 else
-                    mResult.remove("Burro");
+                    mResult.remove("Butter");
             }
 
         });
@@ -146,15 +145,39 @@ public class Alimenti extends AppCompatActivity {
             }
 
         });
-        melanzane.setOnClickListener(new View.OnClickListener() {
+        carote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(melanzane.isChecked())
+                if(carote.isChecked())
                 {
-                    mResult.add("Melanzane");
+                    mResult.add("Carrot");
                 }
                 else
-                    mResult.remove("Melanzane");
+                    mResult.remove("Carrot");
+            }
+
+        });
+        zucchine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(zucchine.isChecked())
+                {
+                    mResult.add("Zucchini");
+                }
+                else
+                    mResult.remove("Zucchini");
+            }
+
+        });
+        pomodori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(pomodori.isChecked())
+                {
+                    mResult.add("Tomato");
+                }
+                else
+                    mResult.remove("Tomato");
             }
 
         });

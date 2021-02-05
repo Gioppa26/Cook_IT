@@ -11,19 +11,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <SearchView
-            android:id="@+id/ricerca"
+        <TextView
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:iconifiedByDefault="false"
-            android:queryHint="Ricerca l'alimento qui">
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:text="              Cosa c'è nel tuo frigo?"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
-            <ListView
-                android:id="@+id/ricercalist"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp" />
-        </SearchView>
         <CheckBox
             android:id="@+id/cbParmigiano"
             android:layout_width="match_parent"
@@ -114,13 +110,8 @@
             android:id="@+id/conferma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="INVIA" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="INVIA"
+            app:backgroundTint="@android:color/holo_green_light" />
 
     </LinearLayout>
 </ScrollView>
