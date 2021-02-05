@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alimenti">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/ricerca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:iconifiedByDefault="false"
+            android:queryHint="Ricerca l'alimento qui">
+
+            <ListView
+                android:id="@+id/ricercalist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </SearchView>
+        <CheckBox
+            android:id="@+id/cbParmigiano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parmigiano" />
+
+        <CheckBox
+            android:id="@+id/cbUova"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uova" />
+
+        <CheckBox
+            android:id="@+id/cbPecorino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pecorino" />
+        <CheckBox
+            android:id="@+id/cbMozzarella"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mozzarella" />
+        <CheckBox
+            android:id="@+id/cbSpeck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speck" />
+        <CheckBox
+            android:id="@+id/cbBurro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burro" />
+        <CheckBox
+            android:id="@+id/cbYogurt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yogurt" />
+        <CheckBox
+            android:id="@+id/cbMelanzane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Melanzane" />
+        <CheckBox
+            android:id="@+id/cbCarote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carote" />
+
+        <CheckBox
+            android:id="@+id/cbZucchine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zucchine" />
+
+        <CheckBox
+            android:id="@+id/cbPomodori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pomodori" />
+
+        <CheckBox
+            android:id="@+id/cbFormaggioFresco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formaggio fresco" />
+        <CheckBox
+            android:id="@+id/cbInsalata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insalata" />
+        <CheckBox
+            android:id="@+id/cbCipolla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cipolla" />
+        <CheckBox
+            android:id="@+id/cbAglio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aglio" />
+        <CheckBox
+            android:id="@+id/cbPeroni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peroni" />
+
+        <Button
+            android:id="@+id/conferma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INVIA" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+</ScrollView>
